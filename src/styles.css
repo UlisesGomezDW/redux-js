@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #659999; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f4791f,
+    #659999
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f4791f, #659999);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card {
+  background-color: #fff;
+  height: 40vh;
+  width: 80vw;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+.adding {
+  width: 90%;
+  height: 5vh;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid #000;
+}
+.adding:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+ul {
+  padding: 0;
+  height: 20vh;
+  overflow: scroll;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: center;
+  border: 1px solid;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 40vw;
+  border: 1px solid #dfe1e5;
+  border-radius: 20px;
+  height: 4vh;
+}
+li span {
+  text-align: center;
+}
+
+li span:nth-child(2) {
+  opacity: 0;
+}
+
+li:hover span:nth-child(2) {
+  opacity: 1;
+}
+.tittle {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.done {
+  text-decoration: line-through;
+}
