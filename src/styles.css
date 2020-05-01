@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap");
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   background: #659999; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -31,6 +32,8 @@ body {
   border-radius: 20px;
   text-align: center;
   border: 2px solid #000;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3vh;
 }
 .adding:focus {
   outline-color: transparent;
@@ -39,7 +42,21 @@ body {
 ul {
   padding: 0;
   height: 20vh;
-  overflow: scroll;
+  overflow: auto;
+}
+ul::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
 }
 li {
   display: flex;
@@ -55,6 +72,7 @@ li {
   border: 1px solid #dfe1e5;
   border-radius: 20px;
   height: 4vh;
+  margin-bottom: 1vh;
 }
 li span {
   text-align: center;
